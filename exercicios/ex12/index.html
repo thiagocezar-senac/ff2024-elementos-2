@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 12</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <section class="container">
+        <div class="row">
+            <h1>Calculadora</h1>
+        </div>
+        <br>
+        <div class="row">
+            <div class="col-4 m-2">
+                <select class="form-control" id="operador">
+                    <option value="">Selecione...</option>
+                    <option value="1">Soma</option>
+                    <option value="2">Subtração</option>
+                    <option value="3">Multiplicação</option>
+                    <option value="4">Divisão</option>
+                    <option value="5">Potenciação</option>
+                    <option value="6">Radiciação</option>
+                </select><br>
+                <label for="num1">N1:</label>
+                <input class="form-control" id="num1" type="text" placeholder="N1...">
+                <br>
+                <label for="num1">N2:</label>
+                <input class="form-control" id="num2" type="text" placeholder="N2...">
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4 m-2">
+                <div class="row">
+                    <div class="d-grid col-12 mx-auto">
+                        <button class="btn btn-dark" type="button">Calcular</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section>
+            <h2></h2>
+        </section>
+    </section>
+
+    <script src="js/bootstrap.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
