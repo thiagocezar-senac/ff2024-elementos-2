@@ -9,6 +9,11 @@ Tabuada de 5:
 */
 function gerarTabuada() {
     let numero = document.querySelector('#numero').value;
+
+    if (isNaN(numero) == true || numero == "") {
+        alert("Número Inválido");
+    } else {
+
     let msgTabuada = "";
     for (let i = 1; i <= 10; i++) {
         msgTabuada += `${numero} X ${i} = ${numero * i} <br>`;
@@ -17,6 +22,7 @@ function gerarTabuada() {
     document.querySelector('#numero').disabled = true;
     document.querySelector('.btn-primary').disabled = true;
     document.querySelector('.btn-dark').disabled = false;
+    }
 }
 function liberarTabuada() {
     let podeGerar = confirm("Deseja gerar outra tabuada?");
