@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Métodos de String</title>
+</head>
+<body>
+    <h1>Teste de Métodos de String no JavaScript</h1>
+    <button onclick="testarString()">Clique para testar</button>
+
+    <script>
+        function testarString() {
+            let texto = "Olá, mundo!";
+
+            // 1. length
+            alert("1. Length: " + texto.length); // Saída: 11
+
+            // 2. toUpperCase()
+            alert("2. toUpperCase: " + texto.toUpperCase()); // Saída: "OLÁ, MUNDO!"
+
+            // 3. toLowerCase()
+            alert("3. toLowerCase: " + texto.toLowerCase()); // Saída: "olá, mundo!"
+
+            // 4. charAt(índice)
+            alert("4. charAt(5): " + texto.charAt(5)); // Saída: "m"
+
+            // 5. indexOf(caractere)
+            alert("5. indexOf('m'): " + texto.indexOf("m")); // Saída: 5
+
+            // 6. lastIndexOf(caractere)
+            alert("6. lastIndexOf('o'): " + texto.lastIndexOf("o")); // Saída: 9
+
+            // 7. slice(início, fim)
+            alert("7. slice(5, 10): " + texto.slice(5, 10)); // Saída: "mundo"
+
+            // 8. substring(início, fim)
+            alert("8. substring(5, 10): " + texto.substring(5, 10)); // Saída: "mundo"
+
+            // 9. replace("antigo", "novo")
+            alert("9. replace('mundo', 'JavaScript'): " + texto.replace("mundo", "JavaScript")); // Saída: "Olá, JavaScript!"
+
+            // 10. split(caractere)
+            let palavras = texto.split(" ");
+            alert("10. split(' '): " + palavras); // Saída: ["Olá,", "mundo!"]
+
+            // 11. trim()
+            let texto2 = " Olá, mundo! ";
+            alert("11. trim(): " + texto2.trim()); // Saída: "Olá, mundo!"
+        }
+    </script>
+</body>
+</html>
